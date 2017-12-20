@@ -45,6 +45,7 @@
             max-width: 1160px;
             margin: auto;
             margin-top: 50px;
+            cursor: pointer;
         }
 
         a {
@@ -83,54 +84,38 @@
     </form>
 
     <div class="cardContainer">
-        <a href="https://nextcloud.librecandy.org/nextcloud">
-            <div class="card">
-                <img src="img/nextcloud.png">
-                <p>Nextcloud</p>
-            </div>
-        </a>
-        <a href="https://youtube.com">
-            <div class="card">
-                <img src="img/youtube.png">
-                <p>YouTube</p>
-            </div>
-        </a>
-        <a href="https://amazon.it">
-            <div class="card">
-                <img src="img/amazon.png">
-                <p>Amazon</p>
-            </div>
-        </a>
-        <a href="https://plus.google.com">
-            <div class="card">
-                <img src="img/gplus.png">
-                <p>Google+</p>
-            </div>
-        </a>
-        <a href="https://drive.google.com">
-            <div class="card">
-                <img src="img/gdrive.png">
-                <p>Google Drive</p>
-            </div>
-        </a>
-        <a href="https://www.netflix.com/it/">
-            <div class="card">
-                <img src="img/netflix.png">
-                <p>Netflix</p>
-            </div>
-        </a>
-        <a href="https://inbox.google.com">
-            <div class="card">
-                <img src="img/inbox.png">
-                <p>Inbox</p>
-            </div>
-        </a>
-        <a href="https://github.com">
-            <div class="card">
-                <img src="img/github.png">
-                <p>GitHub</p>
-            </div>
-        </a>
+		<div class="card" onclick="location.href='https://nextcloud.librecandy.org/nextcloud'">
+            <img src="img/nextcloud.png">
+            <p>Nextcloud</p>
+        </div>
+        <div class="card" onclick="location.href='https://youtube.com'">
+            <img src="img/youtube.png">
+             <p>YouTube</p>
+        </div>
+        <div class="card" onclick="location.href='https://amazon.it'">
+            <img src="img/amazon.png">
+            <p>Amazon</p>
+        </div>
+        <div class="card" onclick="location.href='https://plus.google.com'">
+            <img src="img/gplus.png">
+            <p>Google+</p>
+        </div>
+        <div class="card" onclick="location.href='https://drive.google.com'">
+            <img src="img/gdrive.png">
+            <p>Google Drive</p>
+        </div>
+        <div class="card" onclick="location.href='https://netflix.com'">
+            <img src="img/netflix.png">
+            <p>Netflix</p>
+        </div>
+        <div class="card" onclick="location.href='https://inbox.google.com'">
+            <img src="img/inbox.png">
+            <p>Inbox</p>
+        </div>
+        <div class="card" onclick="location.href='https://github.com'">
+            <img src="img/github.png">
+            <p>GitHub</p>
+        </div>
     </div>
 
 	<button onclick="(()=>{
