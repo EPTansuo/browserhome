@@ -132,20 +132,20 @@
             </div>
         </a>
     </div>
+
+	<button onclick="(()=>{
+		document.getElementsByTagName('iframe')[0].src=document.getElementsByTagName('iframe')[0].src;
+		 document.getElementsByTagName('iframe')[1].src=document.getElementsByTagName('iframe')[1].src;
+	})()" style="font-size: 25px; display: block; margin: auto;">
+		🔄
+	</button>
     
     <div class="framecontainer">
         <iframe src="https://poolmining.org/pool/zec"></iframe>
         <iframe src="https://poolmining.org/pool/eth"></iframe> 
     </div>
 
-	<button onclick="()=>{
-		document.getElementsByTagName('iframe')[0].src=document.getElementsByTagName('iframe')[0].src;
-		 document.getElementsByTagName('iframe')[1].src=document.getElementsByTagName('iframe')[1].src;
-	}" style="font-size: 25px; width: 30px; margin: auto;">
-		🔄
-	</button>
-    
-    <script>
+	<script>
         setTimeout(function() {
             document.getElementById("googlesearch").focus();
         }, 0);
