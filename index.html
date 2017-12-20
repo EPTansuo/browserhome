@@ -1,0 +1,147 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Firefox Home</title>
+    <style>
+        body {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            background-color: #263238;
+            color: white;
+            font-family: Roboto, sans-serif;
+            font-size: 16pt;
+        }
+
+        h1 {
+            font-family: Anonymice Nerd Font, monospace;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 250px;
+            margin: 20px 20px 20px 20px;
+            border-radius: 5px;
+            background-color: rgba(255,255,255,.15);
+            font-family: Roboto Condensed, sans-serif;
+            box-shadow: 0 0 5px rgba(0,0,0,.5);
+        }
+
+        .card img {
+            border-radius: 5px 5px 0 0;
+            width: 250px;
+        }
+
+        .card p {
+            padding: 5px 5px 10px 5px;
+            margin: 0 0 0 0;
+            text-align: center;
+        }
+
+        .cardContainer {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1160px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        a {
+            outline: 0;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        #googlesearch {
+            max-width: 1100px;
+            width: 100%;
+            margin: auto;
+            display: block;
+        }
+        
+        iframe {
+            width: 500px;
+            height: 400px;
+            margin: auto;
+            display: flex;
+        }
+        
+        .framecontainer {
+            display: flex;
+            margin: auto;
+            width: 1160px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>~/</h1>
+
+    <form action="http://www.google.com/search" class="searchform" method="get" name="searchform">
+        <input id="googlesearch" autocomplete="on" class="form-controls search" name="q" placeholder="🔎" required="required"  type="text" autofocus />
+    </form>
+
+    <div class="cardContainer">
+        <a href="https://nextcloud.librecandy.org/nextcloud">
+            <div class="card">
+                <img src="https://i.imgur.com/6N9kHwF.png">
+                <p>Nextcloud</p>
+            </div>
+        </a>
+        <a href="https://youtube.com">
+            <div class="card">
+                <img src="https://i.imgur.com/XZ3EdPj.png">
+                <p>YouTube</p>
+            </div>
+        </a>
+        <a href="https://amazon.it">
+            <div class="card">
+                <img src="https://i.imgur.com/vBxZh1M.png">
+                <p>Amazon</p>
+            </div>
+        </a>
+        <a href="https://plus.google.com">
+            <div class="card">
+                <img src="https://i.imgur.com/K67uOkB.png">
+                <p>Google+</p>
+            </div>
+        </a>
+        <a href="https://drive.google.com">
+            <div class="card">
+                <img src="https://i.imgur.com/aRDmvDH.png">
+                <p>Google Drive</p>
+            </div>
+        </a>
+        <a href="https://www.netflix.com/it/">
+            <div class="card">
+                <img src="https://i.imgur.com/KGODwyR.png">
+                <p>Netflix</p>
+            </div>
+        </a>
+        <a href="https://inbox.google.com">
+            <div class="card">
+                <img src="https://i.imgur.com/VjBs71k.png">
+                <p>Inbox</p>
+            </div>
+        </a>
+        <a href="https://github.com">
+            <div class="card">
+                <img src="https://i.imgur.com/WyboAT3.png">
+                <p>GitHub</p>
+            </div>
+        </a>
+    </div>
+    
+    <div class="framecontainer">
+        <iframe src="https://poolmining.org/pool/zec"></iframe>
+        <iframe src="https://poolmining.org/pool/eth"></iframe> 
+    </div>
+    
+    <script>
+        setTimeout(function() {
+            document.getElementById("googlesearch").focus();
+        }, 0);
+    </script>
+</body>
+<html>
