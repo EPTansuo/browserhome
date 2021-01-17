@@ -74,55 +74,58 @@
             flex-wrap: wrap;
         }
     </style>
+    <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
+    
     <h1>~/</h1>
 
     <form action="http://www.google.com/search" class="searchform" method="get" name="searchform">
-        <input id="googlesearch" autocomplete="on" class="form-controls search" name="q" placeholder="🔎" required="required"  type="text" autofocus />
+        <input id="googlesearch" autocomplete="off" class="form-controls search" name="q" placeholder="🔎" required="required"  type="text" autofocus />
     </form>
 
     <div class="cardContainer">
-        <a target="_blank" href="https://nextcloud.librecandy.org/nextcloud">
+        <a target="_blank" href="https://www.zhihu.com">
             <div class="card">
-                <img src="img/nextcloud.png">
-                <p>Nextcloud</p>
+                <img src="img/zhihu.png">
+                <p>知乎</p>
             </div>
         </a>
-        <a target="_blank" href="https://youtube.com">
+        <a target="_blank" href="https://www.youtube.com">
             <div class="card">
                 <img src="img/youtube.png">
                 <p>YouTube</p>
             </div>
         </a>
-        <a target="_blank" href="https://amazon.it">
+        <a target="_blank" href="https://www.bilibili.com">
             <div class="card">
-                <img src="img/amazon.png">
-                <p>Amazon</p>
+                <img src="img/bilibili.png">
+                <p>Bilibili</p>
             </div>
         </a>
-        <a target="_blank" href="https://plus.google.com">
+        <a target="_blank" href="https://www.wikipedia.org">
             <div class="card">
-                <img src="img/gplus.png">
-                <p>Google+</p>
+                <img src="img/wikipedia.png">
+                <p>Wikipedia</p>
             </div>
         </a>
-        <a target="_blank" href="https://drive.google.com">
+        
+        <a target="_blank" href="https://www.archlinux.com">
             <div class="card">
-                <img src="img/gdrive.png">
-                <p>Google Drive</p>
+                <img src="img/archlinux.png">
+                <p>Arch Linux</p>
             </div>
         </a>
-        <a target="_blank" href="https://www.netflix.com/it/">
+        <a target="_blank" href="https://www.taobao.com">
             <div class="card">
-                <img src="img/netflix.png">
-                <p>Netflix</p>
+                <img src="img/taobao.png">
+                <p>taobao</p>
             </div>
         </a>
-        <a target="_blank" href="https://inbox.google.com">
+        <a target="_blank" href="https://www.bing.com">
             <div class="card">
-                <img src="img/inbox.png">
-                <p>Inbox</p>
+                <img src="img/bing.png">
+                <p>Bing</p>
             </div>
         </a>
         <a target="_blank" href="https://github.com">
@@ -133,22 +136,14 @@
         </a>
     </div>
 
-	<button onclick="(()=>{
-		document.getElementsByTagName('iframe')[0].src=document.getElementsByTagName('iframe')[0].src;
-		 document.getElementsByTagName('iframe')[1].src=document.getElementsByTagName('iframe')[1].src;
-	})()" style="font-size: 25px; display: block; margin: auto;">
-		🔄
-	</button>
-    
-    <div class="framecontainer">
-        <iframe src="https://poolmining.org/pool/zec"></iframe>
-        <iframe src="https://poolmining.org/pool/eth"></iframe> 
-    </div>
-
 	<script>
         setTimeout(function() {
             document.getElementById("googlesearch").focus();
         }, 0);
     </script>
+
+
 </body>
-<html>
+    <div style="pointer-events: none; visibility: hidden; position: absolute;"></div>
+    <div style="all: initial;"><div></div></div>
+</html>
